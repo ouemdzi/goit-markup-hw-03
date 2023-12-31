@@ -34,11 +34,16 @@ img {
   margin: 0 auto;
 }
 
-/* ========================================= */
+/* ================HEADER========================= */
 
-.navigation {
+.header-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.header-section {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .head-logo {
@@ -53,16 +58,6 @@ img {
 }
 .logo-part {
   color: #2e2f42;
-}
-
-.nav-list {
-  display: flex;
-  gap: 40px;
-}
-
-.address-list {
-  display: flex;
-  gap: 40px;
 }
 
 .logo-links {
@@ -80,26 +75,24 @@ img {
   color: #404bbf;
 }
 
-/* ========================================= */
-
-.header-container {
+.navigation {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
-.header-section {
-  border-bottom: 1px solid #e7e9fc;
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address {
   font-style: normal;
   margin-left: auto;
-}
-
-.title-section {
-  background-color: #2e2f42;
-  padding: 188px 0;
 }
 
 .address-links {
@@ -115,7 +108,12 @@ img {
   color: #404bbf;
 }
 
-/* ========================================= */
+/* =================TITLE======================== */
+
+.title-section {
+  background-color: #2e2f42;
+  padding: 188px 0;
+}
 
 .header-title {
   font-size: 56px;
@@ -153,7 +151,7 @@ img {
   background-color: #404bbf;
 }
 
-/* ========================================= */
+/* ==============ADVANTAGES=========================== */
 
 .adv-container {
   display: flex;
@@ -162,13 +160,13 @@ img {
   padding: 120px 156px;
 }
 
-.adv-list {
-  display: flex;
-  gap: 24px;
-}
-
-.adv-item {
-  width: 264px;
+.advantages {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .advantages-title {
@@ -192,13 +190,13 @@ img {
   overflow: hidden;
 }
 
-.advantages {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
+.adv-list {
+  display: flex;
+  gap: 24px;
+}
+
+.adv-item {
+  width: 264px;
 }
 
 .advantages-text {
@@ -208,14 +206,10 @@ img {
   color: #434455;
 }
 
-/* ========================================= */
+/* ==================TEAM======================= */
 
 .team-section {
   background-color: #f4f4fd;
-}
-
-.team-container {
-  display: flex;
   padding: 120px 156px;
 }
 
@@ -229,8 +223,18 @@ img {
   text-align: center;
 }
 
+.item-list {
+  display: flex;
+  gap: 24px;
+}
+
 .team-item {
   background-color: #ffffff;
+  margin-top: 72px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-images {
@@ -243,6 +247,9 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  margin-bottom: 8px;
+  text-align: center;
 }
 
 .team-text {
@@ -250,9 +257,11 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  text-align: center;
 }
 
-/* ========================================= */
+/* ==================PORTFOLIO======================= */
 
 .portfolio-title {
   color: #2e2f42;
@@ -262,6 +271,23 @@ img {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  padding-top: 120px;
+  padding-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolio-images {
+  background-color: #ffffff;
+}
+
+.app-container {
+  border: 1px solid #e7e9fc;
+  border-top: 0;
 }
 
 .app-type {
@@ -270,6 +296,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-left: 16px;
 }
 
 .app-text {
@@ -277,9 +305,10 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 8px 0 32px 16px;
 }
 
-/* ========================================= */
+/* =================FOOTER======================== */
 
 .footer {
   background-color: #2e2f42;
